@@ -645,30 +645,30 @@ footer .social a img {
 
 
 @media (max-width: 700px) {
-  .hero-section .right {
-    display: block;
-    width: 100vw;
-    height: auto;
+  .hero-section, .right {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
     position: relative;
-    overflow: hidden;
   }
   .hero-section .right img {
     width: 100vw;
-    max-width: 100vw;
     height: auto;
+    max-width: 100vw;
     display: block;
     margin: 0 auto;
     object-fit: contain;
     object-position: right top;
   }
-  body, html {
-    overflow-x: hidden !important;
+  html, body {
     max-width: 100vw;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
+
 
   html {
     overflow-x: hidden !important;
