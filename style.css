@@ -645,31 +645,10 @@ footer .social a img {
 
 
 @media (max-width: 700px) {
-    .hero-section .right img {
-      height: 400px;
-      transform: translateX(50px);
-    }
-  
-    .hero-section .right {
-      overflow: hidden;
-      transform: translateX(30px);
-    }
-  html, body {
-    max-width: 100vw;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+  nav.mobile-nav .logo {
+    width: 50px;
+    height: auto;
   }
-
-
-  html {
-    overflow-x: hidden !important;
-    max-width: 100vw;
-  }
-    nav.mobile-nav .logo {
-      width: 50px;
-      height: auto;
-    }
     .wrapper {
       padding: 0 32px;
     }
@@ -700,9 +679,13 @@ footer .social a img {
   
     .hero-section .right img {
       height: 400px;
-      transform: translateX(50px);
+      transform: translateX(-50px);
     }
   
+    .hero-section .right {
+      overflow: hidden;
+      transform: translateX(-50px);
+    }
   
     .achievement-card h3 {
       font-size: 30px;
@@ -773,8 +756,4 @@ footer .social a img {
       margin-top: 80px;
       text-align: center;
     }
-body, html {
-  	overflow-x: hidden !important;
-  	max-width: 100vw;
-	}
   }
